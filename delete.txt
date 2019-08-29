@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+
+int main()
+
+{
+
+int LA[10],k,n,item,i,j;
+
+printf("Enter number of elements of array:");
+
+scanf("%d", &n);
+
+printf("Enter %d elements:",n);
+
+for(i=0;i<n;i++)
+
+{
+
+scanf("%d",&LA[i]);
+}
+
+printf("Enter position to delete:");
+
+scanf("%d",&k );
+
+   
+j = k;
+	
+   
+while( j < n) 
+{
+      
+LA[j-1] = LA[j];
+      
+j = j + 1;
+   
+}
+	
+   
+n = n -1;
+   
+
+printf("Updated array:");
+
+for(i=0;i<n;i++)
+
+{
+
+printf("%d",LA[i]);
+
+}
+    
+return 0;
+
+}

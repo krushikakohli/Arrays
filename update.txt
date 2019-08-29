@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+
+int main()
+{
+    
+int LA[10],k,n,item,i,j;
+    
+printf("Enter number of elements of array:");
+    
+scanf("%d", &n);
+    
+printf("Enter %d elements:",n);
+    
+for(i=0;i<n;i++)
+    
+{
+    
+scanf("%d",&LA[i]);    
+    
+}
+    
+printf("Enter position to update and new array element:");
+    
+scanf("%d %d",&k ,&item);
+    
+LA[k-1]=item;
+    
+printf("Updated array:");
+    
+for(i=0;i<n;i++)
+{
+    
+printf("%d",LA[i]);
+
+}
+    
+    
+return 0;
+
+}

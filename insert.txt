@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+int main()
+
+{
+
+int LA[10],k,n,item,i=0,j=n;
+
+printf("Enter number of elements of array:");
+
+scanf("%d", &n);
+
+printf("Enter %d elements:",n);
+
+for(i=0;i<n;i++)
+
+{
+
+scanf("%d",&LA[i]);
+
+}
+
+printf("Enter element to insert:");
+
+scanf("%d", &item);
+
+printf("Enter position to insert %d:",item);
+
+scanf("%d", &k);
+
+n=n+1;
+
+while( j >=k ) 
+
+{
+  
+LA[j+1]=LA[j];
+  
+j=j-1;
+
+}
+
+LA[k]=item;
+printf("Array after insertion:");
+
+for(i=0;i<n;i++)
+
+{
+
+printf("%d",LA[i]);
+
+}
+  
+return 0;
+
+}
